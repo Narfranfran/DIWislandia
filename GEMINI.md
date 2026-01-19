@@ -3,27 +3,27 @@
 ## Contexto
 Proyecto académico individual para el módulo de Diseño de Interfaces Web (DIW).
 El objetivo es desarrollar un sitio web estático sobre un destino turístico
-utilizando exclusivamente HTML5 y CSS3.
+utilizando HTML5 y CSS3.
 
 ## Temática
 Destino turístico: Islandia  
 Concepto visual: contraste entre hielo y fuego, naturaleza extrema, calma y fuerza.
 
 ## Restricciones técnicas
-- Solo HTML5 y CSS3.
-- Prohibido JavaScript.
-- Prohibido Bootstrap u otros frameworks.
-- Prohibido preprocessadores (SASS, LESS, etc.).
+- HTML5 y CSS3 obligatorios.
+- Bootstrap opcional (sugerido para carrusel).
+- JavaScript permitido según necesidades.
+- Preprocessores no recomendados (usar CSS3 nativo).
 
 ## Requisitos funcionales
-- Carrusel de al menos 3 imágenes hecho solo con HTML + CSS.
+- Carrusel de al menos 3 imágenes (Bootstrap o CSS puro).
 - Inclusión de:
   - 1 audio HTML5 (con atributos documentados).
   - 1 vídeo HTML5 (con atributos documentados).
 - Uso obligatorio de CSS3:
   - 1 transformación.
   - 1 transición.
-  - 1 animación.
+  - 1 animación compleja.
 - Código comentado y orientado a la comprensión académica.
 
 ## Enfoque de diseño
