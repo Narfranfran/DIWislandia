@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Animación compleja para el título */
+@keyframes fadeInGlow {
+    0% {
+        opacity: 0;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007bff, 0 0 40px #007bff, 0 0 50px #007bff, 0 0 60px #007bff, 0 0 70px #007bff;
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 20px #fff, 0 0 30px #007bff, 0 0 40px #007bff, 0 0 50px #007bff, 0 0 60px #007bff, 0 0 70px #007bff, 0 0 80px #007bff;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007bff, 0 0 40px #007bff, 0 0 50px #007bff, 0 0 60px #007bff, 0 0 70px #007bff;
+    }
+}
+
+header h1 {
+    animation: fadeInGlow 3s ease-in-out forwards;
+}
+
+/* Transformación y transición en imágenes */
+#fuego-hielo-section img {
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+#fuego-hielo-section img:hover {
+    transform: rotate(5deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+#gallery-section img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#gallery-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+#contact-section {`n    background-color: #e9ecef;`n}`n`n
+    border-right: 1px solid #ddd;
+}
