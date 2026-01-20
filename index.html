@@ -1,125 +1,263 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Islandia: Tierra de Fuego y Hielo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- Audio elemento con atributos: 'id' para control JS, 'src' para fuente, 'loop' para reproducción continua, 'autoplay' para inicio automático -->
-    <audio id="background-music" src="assets/audio/ambiente.mp3" loop autoplay></audio>
+    <audio
+      id="background-music"
+      src="assets/audio/ambiente.mp3"
+      loop
+      autoplay
+    ></audio>
     <button id="mute-button" class="btn btn-primary floating-btn">Mute</button>
 
     <header class="d-flex align-items-center justify-content-between py-3">
-        <div class="logo-container">
-            <img src="assets/img/logo.png" alt="Logo de Islandia" class="img-fluid" style="max-width: 100px;">
-        </div>
-        <div class="title-container text-center">
-            <h1 class="display-4">Islandia</h1>
-            <p class="lead">Tierra de <span class="fuego-neon">Fuego</span> y <span class="hielo-neon">Hielo</span></p>
-        </div>
-        <div class="logo-container-placeholder"></div>
+      <div class="logo-container">
+        <img
+          src="assets/img/logo.png"
+          alt="Logo de Islandia"
+          class="img-fluid"
+          style="max-width: 100px"
+        />
+      </div>
+      <div class="title-container text-center">
+        <h1 class="display-4">Islandia</h1>
+        <p class="lead">
+          Tierra de <span class="fuego-neon">Fuego</span> y
+          <span class="hielo-neon">Hielo</span>
+        </p>
+      </div>
+      <div class="logo-container-placeholder"></div>
     </header>
 
     <main>
-        <section id="carousel-section">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="assets/img/slide1.jpg" class="d-block w-100" alt="Aurora Boreal">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Auroras Boreales</h5>
-                      <p>Las mágicas luces del norte danzando en el cielo.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/img/slide2.jpg" class="d-block w-100" alt="Glaciar">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Glaciares Milenarios</h5>
-                      <p>Impresionantes masas de hielo que esculpen el paisaje.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/img/slide3.jpg" class="d-block w-100" alt="Volcán en erupción">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Volcanes Activos</h5>
-                      <p>La fuerza de la tierra manifestándose en todo su esplendor.</p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+      <section id="carousel-section">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/slide1.jpg"
+                class="d-block w-100"
+                alt="Aurora Boreal"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Auroras Boreales</h5>
+                <p>Las mágicas luces del norte danzando en el cielo.</p>
               </div>
-        </section>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/slide2.jpg"
+                class="d-block w-100"
+                alt="Glaciar"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Glaciares Milenarios</h5>
+                <p>Impresionantes masas de hielo que esculpen el paisaje.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/slide3.jpg"
+                class="d-block w-100"
+                alt="Volcán en erupción"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Volcanes Activos</h5>
+                <p>
+                  La fuerza de la tierra manifestándose en todo su esplendor.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
 
-        <section id="intro-section" class="py-5 text-center">
-            <div class="container">
-                <h2 class="display-4">Descubre Islandia</h2>
-                <p class="lead">Un país de contrastes asombrosos, donde el fuego de los volcanes se encuentra con el hielo de los glaciares.</p>
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <!-- Vídeo elemento con atributos: 'src' para fuente, 'autoplay' para reproducción automática,
+      <section id="intro-section" class="py-5 text-center">
+        <div class="container">
+          <h2 class="display-4">Descubre Islandia</h2>
+          <p class="lead">
+            Un país de contrastes asombrosos, donde el fuego de los volcanes se
+            encuentra con el hielo de los glaciares.
+          </p>
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <!-- Vídeo elemento con atributos: 'src' para fuente, 'autoplay' para reproducción automática,
                              'muted' para iniciar sin sonido (requisito de navegadores para autoplay),
                              'loop' para repetición continua, 'controls' para interfaz de usuario -->
-                        <video src="assets/video/intro_webm.webm" class="img-fluid" autoplay muted loop controls>
-                            Tu navegador no soporta el elemento de video.
-                        </video>
-                        <p class="mt-3 fst-italic">Vídeo de introducción a los paisajes de Islandia. Atributos: <code>autoplay</code>, <code>muted</code>, <code>loop</code> y <code>controls</code>.</p>
-                    </div>
-                </div>
+              <video
+                src="assets/video/intro_webm.webm"
+                class="img-fluid"
+                autoplay
+                muted
+                loop
+                controls
+              >
+                Tu navegador no soporta el elemento de video.
+              </video>
+              <p class="mt-3 fst-italic">
+                Vídeo de introducción a los paisajes de Islandia. Atributos:
+                <code>autoplay</code>, <code>muted</code>, <code>loop</code> y
+                <code>controls</code>.
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="content-section" class="py-5">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="display-5 text-center mb-4">El Fuego de los Volcanes</h3>
-                        <p class="mb-3">Islandia es un testimonio viviente de la furia geológica de la Tierra. Ubicada sobre la Dorsal Mesoatlántica, esta isla es una de las regiones volcánicas más activas del planeta. Los volcanes no solo son una característica dominante del paisaje, sino que también son una fuente de energía geotérmica que calienta hogares y genera electricidad.</p>
-                        <p class="mb-4">Desde las erupciones explosivas que transforman el cielo con ceniza y fuego, hasta los flujos de lava lentos que esculpen nuevas tierras, cada volcán islandés cuenta una historia milenaria de creación y destrucción. Ejemplos como el Eyjafjallajökull o el Bárðarbunga han capturado la atención mundial, mostrando la capacidad de la naturaleza para imponerse.</p>
-                        <div class="row">
-                            <div class="col-md-4 mb-3"><img src="assets/img/volcan1.jpg" class="img-fluid gallery-image" alt="Volcán 1"></div>
-                            <div class="col-md-4 mb-3"><img src="assets/img/volcan2.jpg" class="img-fluid gallery-image" alt="Volcán 2"></div>
-                            <div class="col-md-4 mb-3"><img src="assets/img/volcan3.jpg" class="img-fluid gallery-image" alt="Volcán 3"></div>
-                        </div>
-                    </div>
+      <section id="content-section" class="py-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="display-5 text-center mb-4">
+                El Fuego de los Volcanes
+              </h3>
+              <p class="mb-3">
+                Islandia es un testimonio viviente de la furia geológica de la
+                Tierra. Ubicada sobre la Dorsal Mesoatlántica, esta isla es una
+                de las regiones volcánicas más activas del planeta. Los volcanes
+                no solo son una característica dominante del paisaje, sino que
+                también son una fuente de energía geotérmica que calienta
+                hogares y genera electricidad.
+              </p>
+              <p class="mb-4">
+                Desde las erupciones explosivas que transforman el cielo con
+                ceniza y fuego, hasta los flujos de lava lentos que esculpen
+                nuevas tierras, cada volcán islandés cuenta una historia
+                milenaria de creación y destrucción. Ejemplos como el
+                Eyjafjallajökull o el Bárðarbunga han capturado la atención
+                mundial, mostrando la capacidad de la naturaleza para imponerse.
+              </p>
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <img
+                    src="assets/img/volcan1.jpg"
+                    class="img-fluid gallery-image"
+                    alt="Volcán 1"
+                  />
                 </div>
+                <div class="col-md-4 mb-3">
+                  <img
+                    src="assets/img/volcan2.jpg"
+                    class="img-fluid gallery-image"
+                    alt="Volcán 2"
+                  />
+                </div>
+                <div class="col-md-4 mb-3">
+                  <img
+                    src="assets/img/volcan3.jpg"
+                    class="img-fluid gallery-image"
+                    alt="Volcán 3"
+                  />
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="gallery-section" class="py-5">
-            <div class="container">
-                <h2 class="display-4 text-center">Galería</h2>
-                <p class="lead text-center mb-5">Un recorrido visual por la asombrosa diversidad de Islandia. Desde las vibrantes auroras boreales hasta la majestuosidad de sus volcanes y glaciares, cada imagen captura un fragmento de la belleza indómita de esta isla única.</p>
-                <div class="row">
-                    <div class="col-md-4 mb-4"><img src="assets/img/slide1.jpg" class="img-fluid gallery-image" alt="Aurora Boreal"></div>
-                    <div class="col-md-4 mb-4"><img src="assets/img/slide2.jpg" class="img-fluid gallery-image" alt="Glaciares"></div>
-                    <div class="col-md-4 mb-4"><img src="assets/img/slide3.jpg" class="img-fluid gallery-image" alt="Volcán"></div>
-                </div>
+      <section id="gallery-section" class="py-5">
+        <div class="container">
+          <h2 class="display-4 text-center">Galería</h2>
+          <p class="lead text-center mb-5">
+            Un recorrido visual por la asombrosa diversidad de Islandia. Desde
+            las vibrantes auroras boreales hasta la majestuosidad de sus
+            volcanes y glaciares, cada imagen captura un fragmento de la belleza
+            indómita de esta isla única.
+          </p>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <img
+                src="assets/img/slide1.jpg"
+                class="img-fluid gallery-image"
+                alt="Aurora Boreal"
+              />
             </div>
-        </section>
+            <div class="col-md-4 mb-4">
+              <img
+                src="assets/img/slide2.jpg"
+                class="img-fluid gallery-image"
+                alt="Glaciares"
+              />
+            </div>
+            <div class="col-md-4 mb-4">
+              <img
+                src="assets/img/slide3.jpg"
+                class="img-fluid gallery-image"
+                alt="Volcán"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="text-center py-4 mt-5 bg-dark text-white">
-        <div class="container">
-            <p>&copy; 2026 - Francisco Santos Guerra - Proyecto DIW</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2026 - Francisco Santos Guerra - Proyecto DIW</p>
+      </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
