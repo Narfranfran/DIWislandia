@@ -8,10 +8,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="text-center py-5">
-        <img src="assets/img/logo.png" alt="Logo de Islandia" class="img-fluid" style="max-width: 150px;">
-        <h1 class="display-1">Islandia</h1>
-        <p class="lead">Tierra de Fuego y Hielo</p>
+    <!-- Audio elemento con atributos: 'id' para control JS, 'src' para fuente, 'loop' para reproducción continua, 'autoplay' para inicio automático -->
+    <audio id="background-music" src="assets/audio/ambiente.mp3" loop autoplay></audio>
+    <button id="mute-button" class="btn btn-primary floating-btn">Mute</button>
+
+    <header class="d-flex align-items-center justify-content-between py-3">
+        <div class="logo-container">
+            <img src="assets/img/logo.png" alt="Logo de Islandia" class="img-fluid" style="max-width: 100px;">
+        </div>
+        <div class="title-container text-center">
+            <h1 class="display-4">Islandia</h1>
+            <p class="lead">Tierra de <span class="fuego-neon">Fuego</span> y <span class="hielo-neon">Hielo</span></p>
+        </div>
+        <div class="logo-container-placeholder"></div>
     </header>
 
     <main>
@@ -62,88 +71,55 @@
                 <p class="lead">Un país de contrastes asombrosos, donde el fuego de los volcanes se encuentra con el hielo de los glaciares.</p>
                 <div class="row justify-content-center">
                     <div class="col-md-8">
+                        <!-- Vídeo elemento con atributos: 'src' para fuente, 'autoplay' para reproducción automática,
+                             'muted' para iniciar sin sonido (requisito de navegadores para autoplay),
+                             'loop' para repetición continua, 'controls' para interfaz de usuario -->
                         <video src="assets/video/intro_webm.webm" class="img-fluid" autoplay muted loop controls>
                             Tu navegador no soporta el elemento de video.
                         </video>
-                        <p class="mt-3 fst-italic">Vídeo de introducción a los paisajes de Islandia. Atributos: <code>autoplay</code> para reproducción automática, <code>muted</code> para iniciar sin sonido, <code>loop</code> para repetición continua y <code>controls</code> para que el usuario pueda interactuar con el vídeo.</p>
+                        <p class="mt-3 fst-italic">Vídeo de introducción a los paisajes de Islandia. Atributos: <code>autoplay</code>, <code>muted</code>, <code>loop</code> y <code>controls</code>.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="fuego-hielo-section" class="py-5">
-            <div class="container">
+        <section id="content-section" class="py-5">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6" id="fuego">
+                    <div class="col-md-12">
                         <h3 class="display-5 text-center mb-4">El Fuego de los Volcanes</h3>
-                        <p>Islandia es uno de los lugares con más actividad volcánica del mundo. Sus paisajes están salpicados de volcanes, algunos de los cuales siguen activos, creando un espectáculo natural impresionante y recordando la fuerza indomable de la Tierra.</p>
+                        <p class="mb-3">Islandia es un testimonio viviente de la furia geológica de la Tierra. Ubicada sobre la Dorsal Mesoatlántica, esta isla es una de las regiones volcánicas más activas del planeta. Los volcanes no solo son una característica dominante del paisaje, sino que también son una fuente de energía geotérmica que calienta hogares y genera electricidad.</p>
+                        <p class="mb-4">Desde las erupciones explosivas que transforman el cielo con ceniza y fuego, hasta los flujos de lava lentos que esculpen nuevas tierras, cada volcán islandés cuenta una historia milenaria de creación y destrucción. Ejemplos como el Eyjafjallajökull o el Bárðarbunga han capturado la atención mundial, mostrando la capacidad de la naturaleza para imponerse.</p>
                         <div class="row">
-                            <div class="col-4"><img src="assets/img/volcan1.jpg" class="img-fluid" alt="Volcán 1"></div>
-                            <div class="col-4"><img src="assets/img/volcan2.jpg" class="img-fluid" alt="Volcán 2"></div>
-                            <div class="col-4"><img src="assets/img/volcan3.jpg" class="img-fluid" alt="Volcán 3"></div>
-                        </div>
-                        <div class="row justify-content-center mt-4">
-                            <div class="col-md-8">
-                                <video src="assets/video/pexels-m-descenza-29477450 (1080p).mp4" class="img-fluid" autoplay muted loop controls>
-                                    Tu navegador no soporta el elemento de video.
-                                </video>
-                                <p class="mt-3 fst-italic">Vídeo de un volcán. Atributos: <code>autoplay</code> para reproducción automática, <code>muted</code> para iniciar sin sonido, <code>loop</code> para repetición continua y <code>controls</code> para que el usuario pueda interactuar con el vídeo.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6" id="hielo">
-                        <h3 class="display-5 text-center mb-4">El Hielo de los Glaciares</h3>
-                        <p>En contraste con el fuego, el hielo domina gran parte de Islandia. Los glaciares cubren más del 11% del territorio, formando cuevas de hielo de un azul intenso y lagos glaciares salpicados de icebergs. Es un paisaje de calma y majestuosidad.</p>
-                        <div class="row">
-                            <div class="col-4"><img src="assets/img/glaciar1.jpg" class="img-fluid" alt="Hielo 1"></div>
-                            <div class="col-4"><img src="assets/img/glaciar2.jpg" class="img-fluid" alt="Hielo 2"></div>
-                            <div class="col-4"><img src="assets/img/glaciar3.jpg" class="img-fluid" alt="Hielo 3"></div>
-                        </div>
-                        <div class="text-center mt-4">
-                            <p>Sonido de un glaciar desprendiéndose:</p>
-                            <audio controls>
-                                <source src="assets/audio/background-music-159125.mp3" type="audio/mpeg">
-                                Tu navegador no soporta el elemento de audio.
-                            </audio>
-                            <p class="mt-2 fst-italic">Audio de un glaciar. Atributo: <code>controls</code> para que el usuario pueda interactuar con el audio.</p>
+                            <div class="col-md-4 mb-3"><img src="assets/img/volcan1.jpg" class="img-fluid gallery-image" alt="Volcán 1"></div>
+                            <div class="col-md-4 mb-3"><img src="assets/img/volcan2.jpg" class="img-fluid gallery-image" alt="Volcán 2"></div>
+                            <div class="col-md-4 mb-3"><img src="assets/img/volcan3.jpg" class="img-fluid gallery-image" alt="Volcán 3"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-            <section id="video-fuego-section" class="py-5 text-center">`n            <div class="container">`n                <h2 class="display-4">Volcanes en Directo</h2>`n                <p class="lead">Observa la majestuosidad de los volcanes islandeses en acci�n.</p>`n                <div class="row justify-content-center">`n                    <div class="col-md-8">`n                        <video src="assets/video/pexels-m-descenza-29477450 (1080p).mp4" class="img-fluid" autoplay muted loop controls>`n                            Tu navegador no soporta el elemento de video.`n                        </video>`n                        <p class="mt-3 fst-italic">V�deo de un volc�n. Atributos: <code>autoplay</code> para reproducci�n autom�tica, <code>muted</code> para iniciar sin sonido, <code>loop</code> para repetici�n continua y <code>controls</code> para que el usuario pueda interactuar con el v�deo.</p>`n                    </div>`n                </div>`n            </div>`n        </section>`n`n        <section id="gallery-section" class="py-5">
+
+        <section id="gallery-section" class="py-5">
             <div class="container">
-                <h2 class="display-4 text-center">Galer�a</h2>
+                <h2 class="display-4 text-center">Galería</h2>
+                <p class="lead text-center mb-5">Un recorrido visual por la asombrosa diversidad de Islandia. Desde las vibrantes auroras boreales hasta la majestuosidad de sus volcanes y glaciares, cada imagen captura un fragmento de la belleza indómita de esta isla única.</p>
                 <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <img src="assets/img/slide1.jpg" class="img-fluid" alt="Galer�a 1">
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="assets/img/slide2.jpg" class="img-fluid" alt="Galer�a 2">
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="assets/img/slide3.jpg" class="img-fluid" alt="Galer�a 3">
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="assets/img/volcan1.jpg" class="img-fluid" alt="Galer�a 4">
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="assets/img/volcan2.jpg" class="img-fluid" alt="Galer�a 5">
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="assets/img/volcan3.jpg" class="img-fluid" alt="Galer�a 6">
-                    </div>
+                    <div class="col-md-4 mb-4"><img src="assets/img/slide1.jpg" class="img-fluid gallery-image" alt="Aurora Boreal"></div>
+                    <div class="col-md-4 mb-4"><img src="assets/img/slide2.jpg" class="img-fluid gallery-image" alt="Glaciares"></div>
+                    <div class="col-md-4 mb-4"><img src="assets/img/slide3.jpg" class="img-fluid gallery-image" alt="Volcán"></div>
                 </div>
             </div>
         </section>
-</main>
+    </main>
 
     <footer class="text-center py-4 mt-5 bg-dark text-white">
         <div class="container">
             <p>&copy; 2026 - Francisco Santos Guerra - Proyecto DIW</p>
         </div>
-    <section id="contact-section" class="py-5">`n            <div class="container">`n                <h2 class="display-4 text-center">Contacto</h2>`n                <p class="lead text-center">�Tienes alguna pregunta? �No dudes in contactar!</p>`n                <form>`n                    <div class="mb-3">`n                        <label for="name" class="form-label">Nombre</label>`n                        <input type="text" class="form-control" id="name" required>`n                    </div>`n                    <div class="mb-3">`n                        <label for="email" class="form-label">Email</label>`n                        <input type="email" class="form-control" id="email" required>`n                    </div>`n                    <div class="mb-3">`n                        <label for="message" class="form-label">Mensaje</label>`n                        <textarea class="form-control" id="message" rows="3" required></textarea>`n                    </div>`n                    <button type="submit" class="btn btn-primary">Enviar</button>`n                </form>`n            </div>`n        </section>`n`n        </footer>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
